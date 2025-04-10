@@ -56,3 +56,4 @@ pg.run()
 # TO RUN ----- Enter in Terminal Below: Streamlit run stonks.py
 # TO End ----- in Terminal below: Control + C
 
+#Notes
