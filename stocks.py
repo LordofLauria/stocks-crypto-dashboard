@@ -76,10 +76,10 @@ with tabs[4]:
 # Tab 6: Stock Performance Comparisons. Note - can't figure out how to add a multiselector that doesn't rely on the overall streamlit sidebar
 #Had to add it to a separate page (see stonks.py) & run "streamlit run stonks.py" in terminal
 with tabs[5]:
-    st.subheader("Options")
-    ticker = yf.Ticker(ticker_symbol)
+    #st.subheader("Options")
+    #ticker = yf.Ticker(ticker_symbol)
 
-    st.write(data)
+    #st.write(data)
 
 
 

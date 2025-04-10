@@ -41,4 +41,13 @@ st.write(
     """
 )
 
+st.write("\n")
+st.subheader("Fun Facts", anchor=False)
+st.write(
+    """
+    - I have made and lost $1M because I am a fucking retard
+    - I put a loaded revolver in my mouth every morning and pull the trigger
+    """
+)
+
 

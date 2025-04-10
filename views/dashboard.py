@@ -25,7 +25,7 @@ if data.empty:
 data['MA'] = data ['Close'].rolling(window=ma_window).mean()
 
 #Initialize Tabs
-tabs = st.tabs(["Raw Data","Price Chart","Volume Chart","Moving Averages","Dividends & Splits","Stock Comparison"])
+tabs = st.tabs(["Raw Data","Price Chart","Volume Chart","Moving Averages","Dividends & Splits","Options"])
 
 #Tab 1:Raw Data
 with tabs[0]:
@@ -74,6 +74,7 @@ with tabs[4]:
     st.write(splits if not splits.empty else "No splits found during this period.")
 
 # Tab 6: Stock Performance Comparisons. Note - can't figure out how to add a multiselector that doesn't rely on the overall streamlit sidebar
+#So I'm going to switch this to options instead. Stock Comparison charts can be found at a different section of the website
 with tabs[5]:
     st.subheader("Stock Performance Comparison")
     ticker = yf.Ticker(ticker_symbol)
